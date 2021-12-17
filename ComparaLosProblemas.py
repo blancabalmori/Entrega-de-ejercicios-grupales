@@ -14,7 +14,19 @@ import sys
 #
 def compareTriplets(a, b):
     # Write your code here
-
+    lucia = list(a)
+    carlos = list(b)
+    lucia_score = 0
+    carlos_score = 0
+    i=0
+    while i <=2:
+        if lucia[i]>carlos[i]:
+            lucia_score+=1
+        elif carlos[i]>lucia[i]:
+            carlos_score+=1
+        else:
+            pass
+    return list(lucia_score, carlos_score)
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
     a = list(map(int, input().rstrip().split()))

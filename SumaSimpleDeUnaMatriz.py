@@ -12,6 +12,10 @@ import sys
 #
 def simpleArraySum(ar):
     # Write your code here
+    sum = 0
+    for e in range(len(ar)):
+        sum+=ar[e]
+    return sum
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
@@ -20,3 +24,4 @@ if __name__ == '__main__':
     result = simpleArraySum(ar)
     fptr.write(str(result) + '\n')
     fptr.close()
+
