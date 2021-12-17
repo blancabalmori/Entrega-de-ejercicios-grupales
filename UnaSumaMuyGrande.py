@@ -12,7 +12,11 @@ import sys
 #
 def aVeryBigSum(ar):
     # Write your
-    
+    sum = 0
+    for e in range(len(ar)):
+        sum+=sum[e]
+    return sum
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
     ar_count = int(input().strip())
