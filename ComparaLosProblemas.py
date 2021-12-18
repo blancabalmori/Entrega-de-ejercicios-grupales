@@ -13,7 +13,6 @@ import sys
 #  2. INTEGER_ARRAY b
 #
 def compareTriplets(a, b):
-    # Write your code here
     lucia = list(a)
     carlos = list(b)
     lucia_score = 0
@@ -40,4 +39,3 @@ if __name__ == '__main__':
     fptr.write(' '.join(map(str, result)))
     fptr.write('\n')
     fptr.close()
-
