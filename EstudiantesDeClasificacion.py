@@ -15,14 +15,14 @@ def gradingStudents(grades):
     for i in range(len(calificaciones)):
         if calificaciones[i] >= 0 and calificaciones[i] <= 100:
             if calificaciones[i] >= 40:
-                if calificaciones[i]%5 == 3: 
+                if calificaciones[i]%5 == 3:
                     calificaciones[i] += 2
                 elif calificaciones[i]%5 ==4:
                     calificaciones[i] += 1
                 notasfinales.append(calificaciones[i])
             else:
                 notasfinales.append(calificaciones[i])
-            
+
         else:
             print("Has introducido notas incorrectas")
     print("Las notas finales son: "+ str(notasfinales))
